@@ -1,0 +1,13 @@
+# Python virtual environment
+.venv/
+
+# Python cache/artifacts
+__pycache__/
+*.py[cod]
+
+# Runtime logs/output
+received.log
+
+# Optional local env files
+.env
+.env.*
