@@ -24,11 +24,13 @@ cd c:\Users\kataoka\Documents\nwprog
 python .\client_report.py
 ```
 
+<!--
 タイムアウト指定:
 
 ```powershell
 python .\client_report.py --timeout 10
 ```
+-->
 
 ## 送信テキスト例
 
@@ -38,6 +40,7 @@ student01,192.168.1.23
 
 ここまで
 
+<!--
 # ★★★教員側で実行しますので、これ以下は実行不要です★★★
 ## サーバ実行方法（Flask）
 
@@ -55,7 +58,7 @@ python .\server_log.py
 ```
 
 受信データは同フォルダの `received.log` に追記されます。
-
+-->
 ## 注意
 
 - `ip_address` は端末の主な送信経路のIPv4を推定して取得します。
