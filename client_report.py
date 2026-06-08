@@ -53,21 +53,7 @@ def post_text(url: str, line: str, timeout: float) -> tuple[int, str]:
         return resp.getcode(), body
 
 
-# def parse_args(argv: list[str]) -> argparse.Namespace:
-#     parser = argparse.ArgumentParser(
-#         description="ユーザ名とIPアドレスを1行CSVで固定サーバへ送信する。",
-#     )
-#     parser.add_argument(
-#         "--timeout",
-#         type=float,
-#         default=5.0,
-#         help="HTTPタイムアウト秒数 (既定: 5.0)",
-#     )
-#     return parser.parse_args(argv)
-
-
-def main(argv: list[str]) -> int:
-    # args = parse_args(argv)
+def main() -> int:
     csv_line = build_csv_line()
 
     print(f"送信先URL: {SERVER_URL}")
